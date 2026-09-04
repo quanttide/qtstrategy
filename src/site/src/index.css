@@ -25,3 +25,25 @@ footer {
   color: #888;
   font-size: 0.85rem;
 }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 1rem 0.5rem;
+}
+
+.card h3 {
+  margin-bottom: 0.25rem;
+}
+
+.card-meta {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 0;
+}

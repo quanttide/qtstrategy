@@ -83,12 +83,6 @@ jobs:
         run: |
           ossutil cp src/site/dist/index.html oss://${{ env.OSS_BUCKET }}/index.html -f --meta=Cache-Control:no-cache
 
-      # SPA 路由 200：把 SPA 壳上传为无扩展名 key（OSS key 无需扩展名），
-      # 使深链直接访问返回 200 + text/html，避免 404 状态码
-      - name: Upload SPA route entries（200）
-        run: |
-          ossutil cp src/site/dist/index.html oss://${{ env.OSS_BUCKET }}/strategies -f --meta "Content-Type:text/html" --meta "Cache-Control:no-cache"
-
       - name: Refresh CDN
         run: |
           pip install aliyun-python-sdk-cdn
