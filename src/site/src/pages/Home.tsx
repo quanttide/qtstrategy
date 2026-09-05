@@ -30,8 +30,8 @@ export default function Home() {
         <StrategyCard name="从项目制向产品制转型">
           将项目中沉淀的标准、工具与方法产品化，收入从按项目出售人力演进为按产品出售能力。
         </StrategyCard>
-        <StrategyCard name="规模化获客">
-          将获客从个人关系转变为体系的产出，形成不依赖特定个人的获客管道。
+        <StrategyCard name="规模化增长">
+          增长路线分为两个模式：产品转型与社区驱动增长。获客从个人关系转变为体系与社区的产出，形成不依赖特定个人的增长管道。
         </StrategyCard>
       </LayerSection>
 
